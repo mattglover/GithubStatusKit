@@ -1,6 +1,18 @@
 language: objective-c
 osx_image: xcode8.2
+sudo: required
+
+before_install:
+ - gpg2 --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+ - rvm get head
+
 xcode_project: GithubStatusKit.xcodeproj
 xcode_scheme: GithubStatusKit
+
+branches:
+  only:
+  - master
+  - development
+
 script:
 - xcodebuild -project GithubStatusKit.xcodeproj -scheme GithubStatusKit -destination 'platform=iOS Simulator,id=1FD54EA7-5A25-4D6F-8599-D6F7687DA4EE,OS=10.2' clean test
