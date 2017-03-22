@@ -12,6 +12,7 @@
 		2CD7E5DD1E825D4D000C92CF /* GithubStatusKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CD7E5CF1E825D4D000C92CF /* GithubStatusKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2CD7E5E71E82A683000C92CF /* GithubStatusManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD7E5E61E82A683000C92CF /* GithubStatusManager.swift */; };
 		2CD7E5E91E82A6AE000C92CF /* GithubStatusManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD7E5E81E82A6AE000C92CF /* GithubStatusManagerTests.swift */; };
+		B261F2DE1E832A3100226B56 /* GithubStatusManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B261F2DD1E832A3100226B56 /* GithubStatusManagerProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 		2CD7E5DC1E825D4D000C92CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CD7E5E61E82A683000C92CF /* GithubStatusManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubStatusManager.swift; sourceTree = "<group>"; };
 		2CD7E5E81E82A6AE000C92CF /* GithubStatusManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubStatusManagerTests.swift; sourceTree = "<group>"; };
+		B261F2DD1E832A3100226B56 /* GithubStatusManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubStatusManagerProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				2CD7E5CF1E825D4D000C92CF /* GithubStatusKit.h */,
+				B261F2DD1E832A3100226B56 /* GithubStatusManagerProtocol.swift */,
 				2CD7E5E61E82A683000C92CF /* GithubStatusManager.swift */,
 				2CD7E5D01E825D4D000C92CF /* Info.plist */,
 			);
@@ -204,6 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B261F2DE1E832A3100226B56 /* GithubStatusManagerProtocol.swift in Sources */,
 				2CD7E5E71E82A683000C92CF /* GithubStatusManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
