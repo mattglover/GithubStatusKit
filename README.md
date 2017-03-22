@@ -1,0 +1,3 @@
+# GithubStatusKit
+
+### Continuous Integration
