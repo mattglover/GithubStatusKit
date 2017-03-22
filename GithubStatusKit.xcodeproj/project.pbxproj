@@ -10,6 +10,8 @@
 		2CD7E5D61E825D4D000C92CF /* GithubStatusKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CD7E5CC1E825D4D000C92CF /* GithubStatusKit.framework */; };
 		2CD7E5DB1E825D4D000C92CF /* GithubStatusKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD7E5DA1E825D4D000C92CF /* GithubStatusKitTests.swift */; };
 		2CD7E5DD1E825D4D000C92CF /* GithubStatusKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CD7E5CF1E825D4D000C92CF /* GithubStatusKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CD7E5E71E82A683000C92CF /* GithubStatusManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD7E5E61E82A683000C92CF /* GithubStatusManager.swift */; };
+		2CD7E5E91E82A6AE000C92CF /* GithubStatusManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD7E5E81E82A6AE000C92CF /* GithubStatusManagerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		2CD7E5D51E825D4D000C92CF /* GithubStatusKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubStatusKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CD7E5DA1E825D4D000C92CF /* GithubStatusKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubStatusKitTests.swift; sourceTree = "<group>"; };
 		2CD7E5DC1E825D4D000C92CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CD7E5E61E82A683000C92CF /* GithubStatusManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubStatusManager.swift; sourceTree = "<group>"; };
+		2CD7E5E81E82A6AE000C92CF /* GithubStatusManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubStatusManagerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				2CD7E5CF1E825D4D000C92CF /* GithubStatusKit.h */,
+				2CD7E5E61E82A683000C92CF /* GithubStatusManager.swift */,
 				2CD7E5D01E825D4D000C92CF /* Info.plist */,
 			);
 			path = GithubStatusKit;
@@ -81,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				2CD7E5DA1E825D4D000C92CF /* GithubStatusKitTests.swift */,
+				2CD7E5E81E82A6AE000C92CF /* GithubStatusManagerTests.swift */,
 				2CD7E5DC1E825D4D000C92CF /* Info.plist */,
 			);
 			path = GithubStatusKitTests;
@@ -148,6 +154,7 @@
 				TargetAttributes = {
 					2CD7E5CB1E825D4D000C92CF = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Manual;
 					};
 					2CD7E5D41E825D4D000C92CF = {
@@ -197,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CD7E5E71E82A683000C92CF /* GithubStatusManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CD7E5E91E82A6AE000C92CF /* GithubStatusManagerTests.swift in Sources */,
 				2CD7E5DB1E825D4D000C92CF /* GithubStatusKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,6 +330,7 @@
 		2CD7E5E11E825D4D000C92CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
@@ -333,6 +343,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.duchysoftware.GithubStatusKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -340,6 +351,7 @@
 		2CD7E5E21E825D4D000C92CF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
@@ -359,6 +371,7 @@
 		2CD7E5E41E825D4D000C92CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 7CZ92Z5Q6J;
 				INFOPLIST_FILE = GithubStatusKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -371,6 +384,7 @@
 		2CD7E5E51E825D4D000C92CF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 7CZ92Z5Q6J;
 				INFOPLIST_FILE = GithubStatusKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -399,6 +413,7 @@
 				2CD7E5E21E825D4D000C92CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2CD7E5E31E825D4D000C92CF /* Build configuration list for PBXNativeTarget "GithubStatusKitTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +422,7 @@
 				2CD7E5E51E825D4D000C92CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
