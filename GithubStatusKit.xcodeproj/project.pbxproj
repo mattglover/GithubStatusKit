@@ -148,8 +148,7 @@
 				TargetAttributes = {
 					2CD7E5CB1E825D4D000C92CF = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 7CZ92Z5Q6J;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					2CD7E5D41E825D4D000C92CF = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -324,7 +323,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 7CZ92Z5Q6J;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -343,7 +342,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 7CZ92Z5Q6J;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
