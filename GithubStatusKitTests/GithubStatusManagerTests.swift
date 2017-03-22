@@ -18,4 +18,20 @@ class GithubStatusManagerTests: XCTestCase {
     func testManagerIsNotNil() {
         XCTAssertNotNil(sut)
     }
+    
+    func testManagerEnvironmentIsNotNil() {
+        XCTAssertNotNil(sut.environment)
+    }
+    
+    func testManagerEnvironment_IsProduction() {
+        XCTAssertEqual("Production", sut.environment)
+    }
+    
+    func testManagerWithTestEnvironment_IsTest() {
+        sut = nil
+        sut = GithubStatusManager(environment: "Test")
+        
+        XCTAssertEqual("Test", sut.environment)
+    }
+    
 }
