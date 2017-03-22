@@ -1,4 +1,4 @@
-# GithubStatusKit
+# Github Status Kit (Swift Framework)
 
 ### Description
 A simple swift framework that returns updates from [Github's Status API](https://status.github.com/api)
